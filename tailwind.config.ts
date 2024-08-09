@@ -7,6 +7,9 @@ const config: Config = {
   prefix: "",
   theme: {
     extend: {
+      // fontFamily: {
+      //   jakartaSans: ["var(--jakarta-Sans)"],
+      // },
       screens: {
         "3xl": "2000px",
       },
@@ -37,8 +40,8 @@ const config: Config = {
           width: "100%",
           marginLeft: "auto",
           marginRight: "auto",
-          paddingLeft: "1rem",
-          paddingRight: "1rem",
+          paddingLeft: "10px",
+          paddingRight: "10px",
           "@screen sm": {
             maxWidth: "640px",
           },
@@ -46,10 +49,7 @@ const config: Config = {
             maxWidth: "768px",
           },
           "@screen lg": {
-            maxWidth: "1280px",
-          },
-          "@screen xl": {
-            maxWidth: "1400px",
+            maxWidth: "1200px",
           },
         },
       });

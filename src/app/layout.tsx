@@ -1,14 +1,12 @@
-import Theme from "@/components/Toggle";
-
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Work_Sans, Plus_Jakarta_Sans } from "next/font/google";
 import "@/scss/global.scss";
 
-import { Navbar } from "@/components/nav";
 import Footer from "@/components/footer";
 import { baseUrl } from "./sitemap";
 
-const inter = Inter({ subsets: ["latin"] });
+const workSans = Work_Sans({ subsets: ["latin"] });
+const jakartaSans = Plus_Jakarta_Sans({ subsets: ["latin"], weight: "500", variable: "--jakarta-Sans" });
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -47,14 +45,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cx("text-black bg-white dark:text-white dark:bg-black text-sm ", inter.className)}>
-        <Theme>
-          <main>
-            <Navbar />
-            <div className="min-h-[80vh]">{children}</div>
-            <Footer />
-          </main>
-        </Theme>
+      <body className={cx("text-black bg-white    text-sm ", workSans.className)}>
+        <main>
+          <div className="min-h-[80vh]">{children}</div>
+          <Footer />
+        </main>
       </body>
     </html>
   );
