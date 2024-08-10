@@ -11,15 +11,15 @@ const jakartaSans = Plus_Jakarta_Sans({ subsets: ["latin"], weight: "500", varia
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: "WP2NextJS Starter",
-    template: "%s | WP2NextJS Starter",
+    default: "Sky Enterprise",
+    template: "%s | Sky Enterprise",
   },
   description: "WordPress to NextJS Conversion Starter Package.",
   openGraph: {
-    title: "P2NextJS Starter",
+    title: "Sky Enterprise",
     description: "WordPress to NextJS Conversion Starter Package.",
     url: baseUrl,
-    siteName: "P2NextJS Starter",
+    siteName: "Sky Enterprise",
     locale: "en_US",
     type: "website",
   },

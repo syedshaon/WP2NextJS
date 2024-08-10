@@ -5,3 +5,184 @@
 @import "variables";
 // @import "mixins";
 @import "attricss";
+
+.ham-button {
+  color: black;
+}
+
+.home .ham-button {
+  color: white;
+}
+
+.contact-form {
+  /*! CSS Used from: Embedded */
+  @media (max-width: 781px) {
+    .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column {
+      flex-basis: 100% !important;
+    }
+  }
+  @media (min-width: 782px) {
+    .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column {
+      flex-basis: 0;
+      flex-grow: 1;
+    }
+  }
+  .wp-block-column {
+    flex-grow: 1;
+    min-width: 0;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+  /*! CSS Used from: Embedded */
+  ul {
+    box-sizing: border-box;
+  }
+  /*! CSS Used from: http://localhost/wp1/wp-content/themes/sky-enterprise/assets/css/blocks.css?ver=6.6.1 ; media=all */
+  @media all {
+    .wp-block-column {
+      transition: all ease 0.23s;
+    }
+  }
+  /*! CSS Used from: Embedded */
+  .is-layout-flow > :first-child {
+    margin-block-start: 0;
+  }
+  .is-layout-flow > :last-child {
+    margin-block-end: 0;
+  }
+  .is-layout-flow > * {
+    margin-block-start: 24px;
+    margin-block-end: 0;
+  }
+  .is-layout-flex > :is(*, div) {
+    margin: 0;
+  }
+  .wpcf7-submit {
+    background-color: #49bbe0;
+    color: #fff;
+    border: none;
+    padding: 1.2rem 2.4rem;
+    font-size: 1rem;
+    transition: all ease 0.3s;
+    cursor: pointer;
+    border-color: transparent;
+    width: 100%;
+  }
+  .wpcf7-submit:hover {
+    background-color: #87c14e;
+    border-color: #87c14e;
+  }
+  /*! CSS Used from: http://localhost/wp1/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.9.8 ; media=all */
+  @media all {
+    .wpcf7 .screen-reader-response {
+      position: absolute;
+      overflow: hidden;
+      clip: rect(1px, 1px, 1px, 1px);
+      clip-path: inset(50%);
+      height: 1px;
+      width: 1px;
+      margin: -1px;
+      padding: 0;
+      border: 0;
+      word-wrap: normal !important;
+    }
+    .wpcf7 form .wpcf7-response-output {
+      margin: 2em 0.5em 1em;
+      padding: 0.2em 1em;
+      border: 2px solid #00a0d2;
+    }
+    .wpcf7 form.init .wpcf7-response-output {
+      display: none;
+    }
+    .wpcf7-form-control-wrap {
+      position: relative;
+    }
+    .wpcf7-spinner {
+      visibility: hidden;
+      display: inline-block;
+      background-color: #23282d;
+      opacity: 0.75;
+      width: 24px;
+      height: 24px;
+      border: none;
+      border-radius: 100%;
+      padding: 0;
+      margin: 0 24px;
+      position: relative;
+    }
+    .wpcf7-spinner::before {
+      content: "";
+      position: absolute;
+      background-color: #fbfbfc;
+      top: 4px;
+      left: 4px;
+      width: 6px;
+      height: 6px;
+      border: none;
+      border-radius: 100%;
+      transform-origin: 8px 8px;
+      animation-name: spin;
+      animation-duration: 1000ms;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .wpcf7-spinner::before {
+        animation-name: blink;
+        animation-duration: 2000ms;
+      }
+    }
+    .wpcf7 .wpcf7-submit:disabled {
+      cursor: not-allowed;
+    }
+    .wpcf7 input[type="email"] {
+      direction: ltr;
+    }
+  }
+  /*! CSS Used from: http://localhost/wp1/wp-content/themes/sky-enterprise/style.css?ver=1.1.0 ; media=all */
+  @media all {
+    input[type="submit"] {
+      transition: all ease 0.23s;
+      -o-transition: all ease 0.23s;
+      -moz-transition: all ease 0.23s;
+      -webkit-transition: all ease 0.23s;
+    }
+    .wpcf7-form-control.wpcf7-text,
+    .wpcf7-form-control.wpcf7-textarea {
+      border-radius: 5px;
+      border: 1px solid #dad7d7;
+      padding: 15px;
+      width: 100%;
+      margin-top: 10px;
+      box-sizing: border-box;
+    }
+    form.wpcf7-form *::placeholder {
+      font-size: 14px;
+    }
+    .wpcf7 form .wpcf7-response-output {
+      margin: 0;
+      padding: 5px 10px;
+      border: 1px solid #00a0d2;
+    }
+  }
+  /*! CSS Used keyframes */
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes blink {
+    from {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+}

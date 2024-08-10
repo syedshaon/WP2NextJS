@@ -43,13 +43,13 @@ export function Navbar() {
         </div>
 
         <div className="lg:hidden ml-auto mr-5 mt-1">
-          <button onClick={toggleMenu} className="text-black dark:text-gray-50 focus:outline-none">
+          <button onClick={toggleMenu} className="ham-button   focus:outline-none">
             {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
           </button>
         </div>
       </div>
       {isOpen && (
-        <div className=" lg:hidden text-black p-4 md:p-6  bg-gray-300 dark:bg-gray-950 dark:text-gray-50   fixed top-0 left-0 w-screen h-screen flex justify-center items-center flex-col z-50">
+        <div className=" lg:hidden text-white p-4 md:p-6  bg-black    fixed top-0 left-0 w-screen h-screen flex justify-center items-center flex-col z-50">
           <div className="lg:hidden absolute   top-5    right-12">
             <button aria-label="mobile menu" onClick={toggleMenu} className="text-white focus:outline-none">
               {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
