@@ -9,7 +9,7 @@ const Footer = () => {
     <div className="text-md bg-[#07041b]  text-gray-50   py-4 md:py-6">
       <div className=" container mx-auto ">
         <div className="my-10 flex flex-wrap gap-5 justify-center lg:justify-between items-center text-lg">
-          <p>Empower your digital presence, take action with our expertise!</p>
+          <p className="text-center md:text-left">Empower your digital presence, take action with our expertise!</p>
           <Button>Get Started Today</Button>
         </div>
         <hr className="h-[1px]  border-gray-800  w-full  " />
@@ -121,7 +121,7 @@ const Footer = () => {
         {/* Third Line */}
         <div className="  w-full text-center  ">
           <hr className="h-[1px]  border-gray-800  w-full  " />
-          <div className=" mt-4 flex justify-center gap-5">
+          <div className=" mt-4 flex justify-center flex-wrap md:flex-nowrap gap-5">
             <p>© 2024 Sky Enterprise. All Rights Reserved.</p>
             <a href="#">Privacy Policy</a>
           </div>

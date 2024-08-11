@@ -10,7 +10,7 @@ import { FaQuestion } from "react-icons/fa";
 const Faq = () => {
   return (
     <div className="animate-in slide-in-from-bottom-60 duration-500 container my-20 bg-white">
-      <h3 className="text-5xl lg:w-2/3 mb-10 text-center mx-auto  font-jakartaSans  ">Frequently Asked Question</h3>
+      <h3 className="text-2xl lg:text-5xl lg:w-2/3 mb-10 text-center mx-auto  font-jakartaSans  ">Frequently Asked Question</h3>
       <div className="flex flex-wrap gap-10">
         {Questions.map((qst, i) => {
           return (
@@ -19,10 +19,10 @@ const Faq = () => {
                 <div className="w-10 h-10 shrink-0 rounded-full bg-blue-500 flex justify-center items-center">
                   <FaQuestion className="text-xl  text-white" />
                 </div>
-                <p className="text-xl font-semibold">{qst.q}</p>
+                <p className="text-lg lg:text-xl font-semibold">{qst.q}</p>
               </div>
 
-              <p className="text-lg">{qst.a}</p>
+              <p className="text-base lg:text-lg">{qst.a}</p>
             </div>
           );
         })}

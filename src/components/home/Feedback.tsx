@@ -3,7 +3,7 @@ import Image from "next/image";
 const Feedback = () => {
   return (
     <div className="animate-in slide-in-from-bottom-60 duration-500 bg-[rgb(224,224,224)] text-gray-800 py-20 min-h-[800px]  ">
-      <h3 className=" container text-5xl lg:w-2/3 mb-10 text-center mx-auto font-semibold  font-jakartaSans  ">Listen to the Stories of Our Satisfied Clients</h3>
+      <h3 className=" container text-2xl lg:text-5xl lg:w-2/3 mb-10 text-center mx-auto font-semibold  font-jakartaSans  ">Listen to the Stories of Our Satisfied Clients</h3>
       <div className="flex flex-wrap justify-between items-start gap-10 container  ">
         <div className="w-full lg:w-[30%]">
           <div className="bg-white p-10 rounded-lg  hover:scale-105 shadow-md cursor-pointer transition-all duration-200">

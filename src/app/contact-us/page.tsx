@@ -8,7 +8,7 @@ const page = () => {
       <Navbar />
       <hr className="my-5  border-gray-120  w-full  " />
 
-      <div className="flex flex-wrap container items-stretch mb-10">
+      <div className="flex flex-wrap container gap-10 lg:gap-0 items-stretch mb-10">
         <div className="w-full xl:w-1/2 px-5 bg-gray-100 flex items-center justify-center ">
           <Together />
         </div>

@@ -18,13 +18,13 @@ const ServiceList = [
 const Services = () => {
   return (
     <div className="container animate-in slide-in-from-bottom-60 duration-500 my-20 bg-slate-100 px-4 py-20">
-      <h3 className="text-5xl lg:w-2/3 mb-10 text-center mx-auto font-bold  font-jakartaSans  ">Our Services</h3>
+      <h3 className="text-2xl lg:text-5xl lg:w-2/3 mb-10 text-center mx-auto font-bold  font-jakartaSans  ">Our Services</h3>
       <p className="mb-10 lg:w-2/3 mx-auto text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
       <div className=" px-10 xl:px-5 xl:flex flex-wrap gap-5 justify-between items-start">
         {ServiceList.map((serv, id) => {
           return (
-            <div key={id} className=" hover:scale-105 transition-all duration-200 bg-white text-gray-700 text-center rounded-lg p-7 lg:w-[30%]">
+            <div key={id} className="mb-5 lg:mb-0 hover:scale-105 transition-all duration-200 bg-white text-gray-700 text-center rounded-lg p-7 lg:w-[30%]">
               <div className="bg-blue-500 mx-auto mb-10  w-20 h-20 rounded-full flex justify-center items-center">
                 {serv.icon && (
                   <serv.icon
@@ -34,8 +34,8 @@ const Services = () => {
                 )}{" "}
                 {/* Placeholder for missing icons */}
               </div>
-              <h4 className="text-2xl font-semibold ">{serv.name}</h4>
-              <p className="my-5 text-base">{serv.details}</p>
+              <h4 className="text-xl md:text-2xl font-semibold ">{serv.name}</h4>
+              <p className="my-2 md:my-5 text-base">{serv.details}</p>
               <a className="text-lg underline" href="#">
                 Read More
               </a>
