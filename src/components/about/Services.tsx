@@ -15,11 +15,9 @@ const ServiceList = [
   { icon: FaQuidditch, name: "UI/UX Development", details: "Our team specializes in crafting compelling brand identities that resonate with your audience." },
 ];
 
-import Image from "next/image";
-
 const Services = () => {
   return (
-    <div className="container my-20 bg-slate-100 px-4 py-20">
+    <div className="container animate-in slide-in-from-bottom-60 duration-500 my-20 bg-slate-100 px-4 py-20">
       <h3 className="text-5xl lg:w-2/3 mb-10 text-center mx-auto font-bold  font-jakartaSans  ">Our Services</h3>
       <p className="mb-10 lg:w-2/3 mx-auto text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 

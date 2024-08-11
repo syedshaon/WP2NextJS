@@ -9,7 +9,7 @@ import { FaQuestion } from "react-icons/fa";
 
 const Faq = () => {
   return (
-    <div className="container my-20 bg-white">
+    <div className="animate-in slide-in-from-bottom-60 duration-500 container my-20 bg-white">
       <h3 className="text-5xl lg:w-2/3 mb-10 text-center mx-auto  font-jakartaSans  ">Frequently Asked Question</h3>
       <div className="flex flex-wrap gap-10">
         {Questions.map((qst, i) => {

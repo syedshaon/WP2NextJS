@@ -11,7 +11,7 @@ function Items({ currentItems }) {
     <>
       {currentItems &&
         currentItems.map((post, key) => (
-          <Link key={key} className=" w-full lg:w-[47%]  border-gray-300 shadow rounded-md border  flex flex-col space-y-1 m-4" href={`/blog/${post.slug}`}>
+          <Link key={key} className=" w-full lg:w-[47%]  bg-gray-100 shadow rounded-md border  flex flex-col space-y-1 m-4" href={`/blog/${post.slug}`}>
             <div className="p-5 w-full flex flex-col   space-x-0 md:space-x-2">
               {post.metadata.coverImage ? (
                 <div className="w-full h-[300px] mb-7 relative">
@@ -59,7 +59,7 @@ function Pagination({ itemsPerPage, allBlogs }) {
 
   return (
     <>
-      <div className="    flex flex-wrap justify-between items-stretch">
+      <div className="   flex flex-wrap justify-between items-stretch">
         <Items currentItems={currentItems} />
       </div>
 
@@ -80,7 +80,7 @@ function Pagination({ itemsPerPage, allBlogs }) {
         breakLabel="... ..."
         breakClassName="page-item "
         breakLinkClassName="page-link"
-        containerClassName="pagination flex justify-between bg-gray-300 p-3 rounded-md mt-10"
+        containerClassName="pagination flex justify-between bg-gray-300 p-3 rounded-md my-10"
         activeClassName="active !bg-gray-700 text-white   "
         renderOnZeroPageCount={null}
       />

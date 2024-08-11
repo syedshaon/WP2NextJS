@@ -1,6 +1,6 @@
 import { Navbar } from "@/components/nav";
-import Form from "@/components/contact/Form";
 import Together from "@/components/contact/Together";
+import Contact from "@/components/Contact";
 
 const page = () => {
   return (
@@ -13,10 +13,10 @@ const page = () => {
           <Together />
         </div>
 
-        <Form />
+        <Contact />
       </div>
 
-      <div className="container mb-10 relative overflow-hidden" style={{ overflow: "hidden", position: "relative" }}>
+      <div className="container animate-in slide-in-from-bottom-60 duration-500 mb-10 relative overflow-hidden" style={{ overflow: "hidden", position: "relative" }}>
         <div style={{ paddingTop: "1px !important" }}>
           <iframe src="https://maps.google.com/maps?q=37.320605,-121.992445&hl=en;z=14&output=embed" width="100%" frameBorder={0} title="Our Location in google map" style={{ height: 400, width: "100%", padding: "0 !important" }} allowFullScreen />
         </div>

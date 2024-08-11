@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Intro = () => {
   return (
-    <div className="bg-[rgb(224,224,224)] text-gray-800 py-12 min-h-[600px] flex justify-center items-center">
+    <div className="animate-in slide-in-from-bottom-60 duration-500 bg-[rgb(224,224,224)] text-gray-800 py-12 min-h-[600px] flex justify-center items-center">
       <div className="container flex flex-col xl:flex-row justify-between items-center">
         <Image src={`/pageImg/pexels-divinetechygirl-1181487.jpg`} alt="person" width={640} height={427} className=" px-10 xl:px-0 w-full xl:w-1/2 h-auto" />
         <div className="w-full xl:w-1/2 px-10 xl:pr-0 xl:pl-10 mt-10 xl:mt-0   text-center xl:text-left">

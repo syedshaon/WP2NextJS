@@ -4,7 +4,7 @@ import Image from "next/image";
 const AboutUs = () => {
   return (
     <>
-      <div className="  text-gray-800 py-12 min-h-[600px] flex justify-center items-center">
+      <div className=" animate-in slide-in-from-bottom-60 duration-500 text-gray-800 py-12 min-h-[600px] flex justify-center items-center">
         <div className="container flex flex-col md:flex-row justify-between items-center">
           <Image src={`/pageImg/pexels-olly-926390.jpg`} alt="person" width={640} height={427} className=" px-10 md:px-0 w-full md:w-1/2 h-auto" />
           <div className="w-full md:w-1/2 px-10 md:pr-0 md:pl-10 mt-10 md:mt-0   text-center md:text-left">

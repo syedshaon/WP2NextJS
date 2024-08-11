@@ -2,7 +2,7 @@ import React from "react";
 
 const Form = () => {
   return (
-    <div className="contact-form w-full xl:w-1/2 px-5">
+    <div className="animate-in slide-in-from-bottom-60 duration-500 contact-form w-full xl:w-1/2 px-5">
       <div className="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
         <div className="wpcf7 js" id="wpcf7-f1959-p64-o1" lang="en-US" dir="ltr">
           <div className="screen-reader-response">

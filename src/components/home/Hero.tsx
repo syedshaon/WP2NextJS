@@ -12,7 +12,7 @@ const Hero = () => {
       </div>
       <Image width={3000} height={2000} className=" w-full h-auto absolute -z-20" alt="Sky Enterprise" priority={true} src="/pageImg/banner_2.jpg" />
       <div className="absolute w-full h-full  -z-10 bg-[rgba(0,0,0,.5)]"></div>
-      <h3 className="text-white text-7xl font-bold  font-jakartaSans text-center container ">Advance and Thrive with Sky Enterprise</h3>
+      <h3 className="text-white text-7xl font-bold  font-jakartaSans text-center container animate-in  spin-in-90 duration-500 ">Advance and Thrive with Sky Enterprise</h3>
       <p className=" my-5 text-white text-lg container text-center lg:w-1/2 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       <Button>Get Started Today</Button>
     </div>

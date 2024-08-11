@@ -3,7 +3,7 @@ import Button from "@/components/Button";
 
 const Together = () => {
   return (
-    <div className="container mx-auto relative z-20 h-[40vh] overflow-hidden flex justify-center items-center flex-col gap-3 mb-10">
+    <div className="animate-in slide-in-from-bottom-60 duration-500 container mx-auto relative z-20 h-[40vh] overflow-hidden flex justify-center items-center flex-col gap-3 mb-10">
       <Image width={3000} height={2000} className=" w-full h-auto absolute -z-20" alt="Sky Enterprise" priority={true} src="/pageImg/banner_3.jpg" />
       {/* <div className="absolute w-full h-full  -z-10 bg-[rgba(0,0,0,.5)]"></div> */}
       <h3 className="text-white lg:w-2/3 text-4xl font-bold  font-jakartaSans text-center container bg-[rgba(0,0,0,.5)]">Let’s Work Together on YourNext Project</h3>
