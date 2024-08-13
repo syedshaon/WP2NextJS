@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Work_Sans, Plus_Jakarta_Sans } from "next/font/google";
 import "@/scss/global.scss";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
-
+import Script from "next/script";
 import Footer from "@/components/footer";
 import { baseUrl } from "./sitemap";
 
@@ -52,6 +52,7 @@ export default function RootLayout({
           <div className="min-h-[80vh]">{children}</div>
           <Footer />
         </main>
+        <Script src="https://js-na1.hs-scripts.com/47059360.js" />
       </body>
     </html>
   );
