@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Work_Sans, Plus_Jakarta_Sans } from "next/font/google";
 import "@/scss/global.scss";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 import Footer from "@/components/footer";
 import { baseUrl } from "./sitemap";
@@ -45,6 +46,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <GoogleAnalytics />
       <body className={cx("text-black bg-white    text-sm ", workSans.className)}>
         <main>
           <div className="min-h-[80vh]">{children}</div>

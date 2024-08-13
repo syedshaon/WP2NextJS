@@ -92,7 +92,7 @@ export default function Contact() {
         {showValidation && msgVal.length < 1 && <p className="text-sm mt-1 ml-3 text-orange-500">Name must be at least one character.</p>}
       </div>
       <div className="mx-auto text-center">
-        <button className=" w-full rounded-lg  text-base lg:text-lg   bg-[#49bbe0]    text-white  text-center py-3 lg:py-4 px-5 lg:px-8 hover:bg-[#87c14e] hover:text-white transition-all ease-in-out   duration-500 cursor-pointer">Submit</button>
+        <button className="animate-in w-full rounded-md   zoom-in-150 duration-500 text-base lg:text-lg   bg-[#49bbe0]    text-white  text-center py-3 px-5 lg:py-4 lg:px-8 hover:bg-[#87c14e] hover:text-white transition-all ease-in-out     cursor-pointer">Submit</button>
       </div>
 
       <div className="w-full  min-h-14 pt-3 inline-flex flex-nowrap overflow-hidden lg:[mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
