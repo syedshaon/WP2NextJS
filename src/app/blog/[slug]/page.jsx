@@ -88,7 +88,7 @@ export default function Blog({ params }) {
 
         {post.metadata.coverImage && (
           <div className="w-full h-[400px] relative">
-            <Image className="object-cover coverImage" src={`/images/${post.metadata.coverImage}`} fill alt={post.metadata.title} />
+            <Image sizes="100%" priority className="object-cover coverImage" src={`/images/${post.metadata.coverImage}`} fill alt={post.metadata.title} />
           </div>
         )}
         <p className="text-neutral-600 dark:text-neutral-400  tabular-nums  text-sm text-center mb-2 mt-3">

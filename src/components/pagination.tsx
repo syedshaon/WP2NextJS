@@ -15,7 +15,7 @@ function Items({ currentItems }) {
             <div className="p-5 w-full flex flex-col   space-x-0 md:space-x-2">
               {post.metadata.coverImage ? (
                 <div className="w-full h-[300px] mb-7 relative">
-                  <Image className="object-cover coverImage" src={`/images/${post.metadata.coverImage}`} fill alt={post.metadata.title} />
+                  <Image priority={key < 4 && true} sizes="(max-width: 1024px) 100%,  50%" className="object-cover coverImage" src={`/images/${post.metadata.coverImage}`} fill alt={post.metadata.title} />
                 </div>
               ) : (
                 <div className="w-full h-[300px] mb-7 relative bg-gray-200 rounded"></div>
@@ -80,7 +80,7 @@ function Pagination({ itemsPerPage, allBlogs }) {
         breakLabel="... ..."
         breakClassName="page-item "
         breakLinkClassName="page-link"
-        containerClassName="pagination flex justify-between bg-gray-300 p-3 rounded-md my-10"
+        containerClassName="pagination flex justify-between   p-3 rounded-md my-10"
         activeClassName="active !bg-gray-700 text-white   "
         renderOnZeroPageCount={null}
       />

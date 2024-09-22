@@ -1,8 +1,9 @@
+import type { Metadata } from "next";
 import { Categories } from "@/components/categories";
 
-export const metadata = {
-  title: "Categories",
-  description: "Categories of my site.",
+export const metadata: Metadata = {
+  title: "Sky Enterprise | Blog Categories",
+  description: "Blog Categories of Sky Enterprise Website.",
 };
 
 export default function Page() {

@@ -1,6 +1,12 @@
+import type { Metadata } from "next";
 import { Navbar } from "@/components/nav";
 import Together from "@/components/contact/Together";
 import Contact from "@/components/Contact";
+
+export const metadata: Metadata = {
+  title: "Sky Enterprise | Contact Us",
+  description: "Get in touch with Sky Enterprise for expert WordPress to Next.js conversions and tailored web solutions. Whether you have questions or need a custom solution, our team is here to help. Reach out today!",
+};
 
 const page = () => {
   return (

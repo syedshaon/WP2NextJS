@@ -4,6 +4,58 @@ import { FaXTwitter } from "react-icons/fa6";
 import Link from "next/link";
 import Button from "./Button";
 
+const socialLinks = [
+  {
+    name: "Instagram",
+    link: "#",
+    icon: <FaInstagram className="text-2xl" />,
+  },
+  {
+    name: "Facebook",
+    link: "#",
+    icon: <FaFacebookF className="text-2xl" />,
+  },
+  {
+    name: "Twitter",
+    link: "#",
+    icon: <FaXTwitter className="text-2xl" />,
+  },
+  {
+    name: "Linkedin",
+    link: "#",
+    icon: <FaLinkedinIn className="text-2xl" />,
+  },
+];
+
+const pageLinks = [
+  {
+    name: "RSS",
+    link: "/rss",
+  },
+  {
+    name: "Sitemap",
+    link: "/sitemap.xml",
+  },
+  {
+    name: "About Us",
+    link: "/about",
+  },
+
+  {
+    name: "Terms and Conditions",
+    link: "#",
+  },
+
+  {
+    name: "Blog",
+    link: "/blog",
+  },
+  {
+    name: "Contact Us",
+    link: "/contact-us",
+  },
+];
+
 const Footer = () => {
   return (
     <div className="text-md bg-[#07041b]  text-gray-50   py-4 md:py-6">
@@ -23,32 +75,26 @@ const Footer = () => {
             <p className="mt-5 text-center lg:text-left  ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
 
             <ul className="flex items-center gap-3 my-5">
-              <li>
-                <a aria-label="Instagram" className=" flex justify-center items-center w-[40px] h-[40px]   rounded-full bg-white text-black " href="#">
-                  <FaInstagram className="text-2xl" />
-                </a>
-              </li>
-              <li>
-                <a aria-label="Facebook" className=" flex justify-center items-center w-[40px] h-[40px]   rounded-full bg-white text-black " href="#">
-                  <FaFacebookF className="text-2xl" />
-                </a>
-              </li>
-              <li>
-                <a aria-label="Twitter" className=" flex justify-center items-center w-[40px] h-[40px]   rounded-full bg-white text-black " href="#">
-                  <FaXTwitter className="text-2xl" />
-                </a>
-              </li>
-              <li>
-                <a aria-label="Linkedin" className=" flex justify-center items-center w-[40px] h-[40px]   rounded-full bg-white text-black " href="#">
-                  <FaLinkedinIn className="text-2xl" />
-                </a>
-              </li>
+              {socialLinks.map((link, index) => (
+                <li key={index}>
+                  <a aria-label={link.name} className=" flex justify-center items-center w-[40px] h-[40px]   rounded-full bg-white text-black " href={link.link}>
+                    {link.icon}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
           <div className="flex flex-col items-center lg:items-start">
             <p className="font-bold text-lg">Company</p>
             <ul className="flex flex-col items-center lg:items-start gap-3 my-5">
-              <li>
+              {pageLinks.map((link, index) => (
+                <li key={index}>
+                  <a aria-label={link.name} className=" flex justify-center items-center   rounded-full text-white transition-all duration-200 hover:text-[#87c14e]" href={link.link}>
+                    {link.name}
+                  </a>
+                </li>
+              ))}
+              {/* <li>
                 <a aria-label="Instagram" className=" flex justify-center items-center   rounded-full text-white transition-all duration-200 hover:text-[#87c14e]" href="#">
                   About Us
                 </a>
@@ -77,7 +123,7 @@ const Footer = () => {
                 <a aria-label="Instagram" className=" flex justify-center items-center   rounded-full text-white transition-all duration-200 hover:text-[#87c14e]" href="#">
                   Contact Us
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
           <div className="flex flex-col items-center lg:items-start">
